@@ -1,0 +1,35 @@
+---
+engine_version: 0.2.58
+file_version: 2022-02-06 20:13:25.457146000 Z
+resources:
+- name: user
+  preferences:
+    actions:
+    - name: say_hello
+      display_name: say_hello
+      action_type: method
+      preferences:
+        method_name: say_hello
+    - name: say_bye
+      display_name: say_bye
+      action_type: method
+      preferences:
+        method_name: say_bye
+  updated_at: 2022-02-06 20:13:25.457146000 +00:00
+configs:
+- key: header.links
+  value:
+  - name: "⭐ Star on GitHub"
+    path: https://github.com/motor-admin/motor-admin-rails
+  updated_at: 2022-02-06 20:02:13.867217000 +00:00
+queries: []
+dashboards: []
+forms: []
+alerts: []
+api_configs:
+- id: 1
+  name: origin
+  url: "/"
+  preferences: {}
+  description:
+  updated_at: 2022-02-06 20:02:13.885857000 +00:00
