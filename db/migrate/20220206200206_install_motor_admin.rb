@@ -123,9 +123,9 @@ class InstallMotorAdmin < ActiveRecord::Migration[7.0]
     end
 
     create_table :motor_audits do |t|
-      t.column :auditable_id, :bigint
+      t.column :auditable_id, :string
       t.column :auditable_type, :string
-      t.column :associated_id, :bigint
+      t.column :associated_id, :string
       t.column :associated_type, :string
       t.column :user_id, :bigint
       t.column :user_type, :string
@@ -172,7 +172,7 @@ class InstallMotorAdmin < ActiveRecord::Migration[7.0]
 
     model.table_name = 'motor_api_configs'
 
-    model.create!(name: 'origin', path: '/')
+    model.create!(name: 'origin', url: '/', preferences: {}, credentials: {})
   end
 
   def self.down
