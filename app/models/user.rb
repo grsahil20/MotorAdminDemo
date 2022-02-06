@@ -12,9 +12,7 @@ class User < ApplicationRecord
 
   def say_phrase_10_times(phrase)
     10.times do
-      puts "Hello"
-      p "Hello"
-      print "Hello"
+      puts phrase
     end
   end
 
